@@ -23,7 +23,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    // Level: learner
+    // Level: ***learner***
     RTHuman* human = [[RTHuman alloc] init];
     RTCyclist* cyclist = [[RTCyclist alloc] init];
     RTRunner* runner = [[RTRunner alloc] init];
@@ -61,7 +61,7 @@
     }
     */
     
-    // Level: student
+    // Level: ***student***
     RTBoxer* boxer = [[RTBoxer alloc] init];
     
     boxer.name = @"Akram";
