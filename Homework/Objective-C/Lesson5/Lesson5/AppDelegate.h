@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 @class RTHuman;
+@class RTAnimal;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

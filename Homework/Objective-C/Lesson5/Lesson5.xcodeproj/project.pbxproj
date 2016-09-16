@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		444E235E1D8C5526000C80A1 /* RTAnimal.m in Sources */ = {isa = PBXBuildFile; fileRef = 444E235D1D8C5526000C80A1 /* RTAnimal.m */; };
+		444E23611D8C5641000C80A1 /* RTDog.m in Sources */ = {isa = PBXBuildFile; fileRef = 444E23601D8C5641000C80A1 /* RTDog.m */; };
+		444E23641D8C567C000C80A1 /* RTCat.m in Sources */ = {isa = PBXBuildFile; fileRef = 444E23631D8C567C000C80A1 /* RTCat.m */; };
 		446563371D8B20E000DA8528 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 446563361D8B20E000DA8528 /* main.m */; };
 		4465633A1D8B20E000DA8528 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 446563391D8B20E000DA8528 /* AppDelegate.m */; };
 		4465633D1D8B20E000DA8528 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4465633C1D8B20E000DA8528 /* ViewController.m */; };
@@ -40,6 +43,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		444E235C1D8C5526000C80A1 /* RTAnimal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTAnimal.h; sourceTree = "<group>"; };
+		444E235D1D8C5526000C80A1 /* RTAnimal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTAnimal.m; sourceTree = "<group>"; };
+		444E235F1D8C5641000C80A1 /* RTDog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTDog.h; sourceTree = "<group>"; };
+		444E23601D8C5641000C80A1 /* RTDog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTDog.m; sourceTree = "<group>"; };
+		444E23621D8C567C000C80A1 /* RTCat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTCat.h; sourceTree = "<group>"; };
+		444E23631D8C567C000C80A1 /* RTCat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTCat.m; sourceTree = "<group>"; };
 		446563321D8B20E000DA8528 /* Lesson5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lesson5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		446563361D8B20E000DA8528 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		446563381D8B20E000DA8528 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -116,6 +125,12 @@
 		446563341D8B20E000DA8528 /* Lesson5 */ = {
 			isa = PBXGroup;
 			children = (
+				444E235C1D8C5526000C80A1 /* RTAnimal.h */,
+				444E235D1D8C5526000C80A1 /* RTAnimal.m */,
+				444E235F1D8C5641000C80A1 /* RTDog.h */,
+				444E23601D8C5641000C80A1 /* RTDog.m */,
+				444E23621D8C567C000C80A1 /* RTCat.h */,
+				444E23631D8C567C000C80A1 /* RTCat.m */,
 				446563681D8B210D00DA8528 /* RTHuman.h */,
 				446563691D8B210D00DA8528 /* RTHuman.m */,
 				4465636B1D8B227E00DA8528 /* RTCyclist.h */,
@@ -295,13 +310,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				444E23611D8C5641000C80A1 /* RTDog.m in Sources */,
 				4465633D1D8B20E000DA8528 /* ViewController.m in Sources */,
 				4465633A1D8B20E000DA8528 /* AppDelegate.m in Sources */,
 				446563761D8B278C00DA8528 /* RTBoxer.m in Sources */,
+				444E235E1D8C5526000C80A1 /* RTAnimal.m in Sources */,
 				446563371D8B20E000DA8528 /* main.m in Sources */,
 				446563701D8B22C600DA8528 /* RTRunner.m in Sources */,
 				4465636D1D8B227E00DA8528 /* RTCyclist.m in Sources */,
 				4465636A1D8B210D00DA8528 /* RTHuman.m in Sources */,
+				444E23641D8C567C000C80A1 /* RTCat.m in Sources */,
 				446563731D8B22F900DA8528 /* RTSwimmer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -528,6 +546,7 @@
 				446563611D8B20E000DA8528 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		446563621D8B20E000DA8528 /* Build configuration list for PBXNativeTarget "Lesson5Tests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +555,7 @@
 				446563641D8B20E000DA8528 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		446563651D8B20E000DA8528 /* Build configuration list for PBXNativeTarget "Lesson5UITests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +564,7 @@
 				446563671D8B20E000DA8528 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

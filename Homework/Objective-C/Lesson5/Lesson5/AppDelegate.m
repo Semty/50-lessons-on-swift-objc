@@ -12,6 +12,9 @@
 #import "RTRunner.h"
 #import "RTSwimmer.h"
 #import "RTBoxer.h"
+#import "RTAnimal.h"
+#import "RTDog.h"
+#import "RTCat.h"
 
 @interface AppDelegate ()
 
@@ -23,7 +26,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    // Level: ***learner***
+    // Level:                                   ***LEARNER***
     RTHuman* human = [[RTHuman alloc] init];
     RTCyclist* cyclist = [[RTCyclist alloc] init];
     RTRunner* runner = [[RTRunner alloc] init];
@@ -61,7 +64,7 @@
     }
     */
     
-    // Level: ***student***
+    // Level:                                   ***STUDENT***
     RTBoxer* boxer = [[RTBoxer alloc] init];
     
     boxer.name = @"Akram";
@@ -70,7 +73,7 @@
     boxer.gender = @"Male";
     boxer.skinColor = @"White";
     boxer.nationality = @"Tajik";
-    
+    /*
     NSArray* people = @[human, cyclist, runner, swimmer, boxer];
     
     for (RTHuman* human in people.reverseObjectEnumerator) {
@@ -85,7 +88,117 @@
         [human movement];
         NSLog(@"\n");
     }
+     */
+    // Level:                                   ***MASTER***
+    RTAnimal* animal = [[RTAnimal alloc] init];
+    RTDog* dog = [[RTDog alloc] init];
+    RTCat* cat = [[RTCat alloc] init];
+    
+    dog.species = @"Dog";
+    dog.name = @"Sharik";
+    dog.age = 10;
+    cat.species = @"Cat";
+    cat.age = 2;
+    cat.name = @"Tosya";
+    /*
+    NSArray* peopleAndAnimals = @[human, cyclist, dog, swimmer, boxer, animal, runner, cat];
+    
+    for (int i = 0; i < [peopleAndAnimals count]; i++) {
+        if ([peopleAndAnimals[i] isKindOfClass:[RTHuman class]]) {
+            RTHuman* tempHuman = (RTHuman*)peopleAndAnimals[i];
+            NSLog(@"*Human*");
+            NSLog(@"Name: %@", tempHuman.name);
+            NSLog(@"Height: %f", tempHuman.height);
+            NSLog(@"Weight: %f", tempHuman.weight);
+            NSLog(@"Gender: %@", tempHuman.gender);
+            if ([tempHuman isMemberOfClass:[RTBoxer class]]) {
+                NSLog(@"Skin color: %@", ((RTBoxer*)tempHuman).skinColor);
+                NSLog(@"Nationality: %@", ((RTBoxer*)tempHuman).nationality);
+            }
+            [tempHuman movement];
+            NSLog(@"\n");
+        } else if ([peopleAndAnimals[i] isKindOfClass:[RTAnimal class]]) {
+            RTAnimal* tempAnimal = (RTAnimal*)peopleAndAnimals[i];
+            NSLog(@"*Animal*");
+            NSLog(@"Species: %@", tempAnimal.species);
+            NSLog(@"Name: %@", tempAnimal.name);
+            NSLog(@"Age: %d", tempAnimal.age);
+            [tempAnimal movement];
+            NSLog(@"\n");
+        }
+    }*/
+    // Level:                                   ***STAR***
+    /*
+    NSArray* people = @[human, cyclist, runner, swimmer, boxer];
+    NSArray* animals = @[animal, dog, cat];
+    
+    for (int i = 0; i < MAX([people count], [animals count]); i++) {
+        if (i < [people count]) {
+            RTHuman* tempHuman = (RTHuman*)people[i];
+            NSLog(@"***Human***");
+            NSLog(@"Name: %@", tempHuman.name);
+            NSLog(@"Height: %f", tempHuman.height);
+            NSLog(@"Weight: %f", tempHuman.weight);
+            NSLog(@"Gender: %@", tempHuman.gender);
+            if ([tempHuman isMemberOfClass:[RTBoxer class]]) {
+                NSLog(@"Skin color: %@", ((RTBoxer*)tempHuman).skinColor);
+                NSLog(@"Nationality: %@", ((RTBoxer*)tempHuman).nationality);
+            }
+            [tempHuman movement];
+            NSLog(@"\n");
+        }
+        if (i < [animals count]) {
+            RTAnimal* tempAnimal = (RTAnimal*)animals[i];
+            NSLog(@"***Animal***");
+            NSLog(@"Species: %@", tempAnimal.species);
+            NSLog(@"Name: %@", tempAnimal.name);
+            NSLog(@"Age: %d", tempAnimal.age);
+            [tempAnimal movement];
+            NSLog(@"\n");
+        }
+    }*/
+    // Level:                               ***SUPERMAN***
+    NSArray* peopleAndAnimals = @[human, cyclist, runner, animal, dog, swimmer, boxer, cat];
+    
+    NSArray* sortedPeopleAndAnimals = [peopleAndAnimals sortedArrayUsingComparator:^NSComparisonResult(id a, id b) {
 
+        if ([a isKindOfClass:[RTHuman class]] && [b isKindOfClass:[RTHuman class]]) {
+            return [[(RTHuman*)a name] compare: [(RTHuman*)b name]];
+        }
+        if ([a isKindOfClass:[RTAnimal class]] && [b isKindOfClass:[RTAnimal class]]) {
+            return [[(RTAnimal*)a name] compare: [(RTAnimal*)b name]];
+        }
+        if ([a isKindOfClass:[RTAnimal class]]) {
+            return NSOrderedDescending;
+        } else {
+            return NSOrderedAscending;
+        }
+    }];
+    
+    for (int i = 0; i < [sortedPeopleAndAnimals count]; i++) {
+        if ([sortedPeopleAndAnimals[i] isKindOfClass:[RTHuman class]]) {
+            RTHuman* tempHuman = (RTHuman*)sortedPeopleAndAnimals[i];
+            NSLog(@"*Human*");
+            NSLog(@"Name: %@", tempHuman.name);
+            NSLog(@"Height: %f", tempHuman.height);
+            NSLog(@"Weight: %f", tempHuman.weight);
+            NSLog(@"Gender: %@", tempHuman.gender);
+            if ([tempHuman isMemberOfClass:[RTBoxer class]]) {
+                NSLog(@"Skin color: %@", ((RTBoxer*)tempHuman).skinColor);
+                NSLog(@"Nationality: %@", ((RTBoxer*)tempHuman).nationality);
+            }
+            [tempHuman movement];
+            NSLog(@"\n");
+        } else if ([sortedPeopleAndAnimals[i] isKindOfClass:[RTAnimal class]]) {
+            RTAnimal* tempAnimal = (RTAnimal*)sortedPeopleAndAnimals[i];
+            NSLog(@"*Animal*");
+            NSLog(@"Name: %@", tempAnimal.name);
+            NSLog(@"Species: %@", tempAnimal.species);
+            NSLog(@"Age: %d", tempAnimal.age);
+            [tempAnimal movement];
+            NSLog(@"\n");
+        }
+    }
     
     return YES;
 }
