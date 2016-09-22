@@ -80,7 +80,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         for patient in patients {
             if let patientFeedback = patient.feedback {
                 if patientFeedback == .dislike {
-                    print("\(patient.name) dislikes his doctor. He'll change him")
+                    print("\(patient.name) dislikes his doctor. He(She)'ll change him")
                     patient.change(doctor: patient.delegate, from: doctors)
                     print("\n")
                 }

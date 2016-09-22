@@ -103,8 +103,9 @@
     
     for (Patient* patient in patients) {
         if (patient.feedback == dislike) {
-            NSLog(@"%@ dislikes his doctor. He'll change him", patient.name);
+            NSLog(@"%@ dislikes his doctor. He(She)'ll change him", patient.name);
             [patient change:patient.delegate from:doctors];
+            NSLog(@"\n");
         }
     }
     
