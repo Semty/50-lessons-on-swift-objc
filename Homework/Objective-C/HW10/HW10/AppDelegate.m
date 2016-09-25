@@ -30,7 +30,7 @@
     // Override point for customization after application launch.
     
     //                                                  *** LEARNER ***
-    /*
+    
     self.government = [[RTGovernment alloc] init];
     
     self.doctor = [[RTDoctor alloc] init];
@@ -49,7 +49,7 @@
     //                                                  *** STUDENT (UMNICHKA) && MASTER ***
     self.government.averagePrice = 9.2f;
     self.government.averagePrice = 17.6f;
-    self.government.averagePrice = 7.8f;*/
+    self.government.averagePrice = 7.8f;
     //                                                  *** SUPERMAN ***
     NSLog(@"\n\n\n\n\n\n\n\n\n");
     self.fakeAppDelegate = [[RTFakeAppDelegate alloc] init];
