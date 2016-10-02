@@ -19,7 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    //                                                  *** LEARNER && STUDENT ***
+    //                                                  *** LEARNER && STUDENT && MASTER && SUPREMAN ***
     RTStudent *student1 = [[RTStudent alloc] initWithName:@"Ruslan(1)"];
     RTStudent *student2 = [[RTStudent alloc] initWithName:@"Dasha(2)"];
     RTStudent *student3 = [[RTStudent alloc] initWithName:@"Akram(3)"];
@@ -28,20 +28,17 @@
     
     NSArray *students = @[ student1, student2, student3, student4, student5 ];
     
-    NSInteger maxNumber = 10000001; // = 0...10000000
+    NSInteger maxNumber = 100000001; // = 0...100000000
     NSInteger randomNumber = arc4random() % maxNumber;
-    
-    dispatch_queue_t studentQueue = dispatch_queue_create("com.rstimchenko.hw13.studentqueue", DISPATCH_QUEUE_CONCURRENT);
     
     void (^resultBlock)(NSString *, double) = ^(NSString *name, double time) {
         NSLog(@"%@ ended in %f sec!", name, time);
     };
     
-    NSLog(@"\n\n\n");
     for (RTStudent *student in students) {
-        [student guessTheAnswer:randomNumber withMaxNumber:maxNumber andQueue:studentQueue withResultBlock:resultBlock];
+        //[student guessTheAnswer1:randomNumber withMaxNumber:maxNumber andResultBlock:resultBlock]; // - GCD
+        [student guessTheAnswer2:randomNumber withMaxNumber:maxNumber andResultBlock:resultBlock];   // - NSOperationQueue
     }
-    NSLog(@"\n\n\n");
     
     return YES;
 }
