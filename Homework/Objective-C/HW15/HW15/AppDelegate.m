@@ -106,6 +106,8 @@
         if (student.subjectType & RTStudentSubjectTypeBiology) {
             
             student.subjectType &= ~RTStudentSubjectTypeBiology;
+            
+            NSLog(@"%@'s biology is deleted!", student.name);
         }
     }
 }
