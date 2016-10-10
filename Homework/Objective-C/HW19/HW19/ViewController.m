@@ -11,6 +11,8 @@
 @interface ViewController ()
 
 @property (weak, nonatomic) UIView *squads;
+@property (strong, nonatomic) NSMutableArray *blackSquads;
+@property (strong, nonatomic) NSMutableArray *smallSquads;
 
 @end
 
@@ -22,6 +24,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _blackSquads = [[NSMutableArray alloc] init];
+    _smallSquads = [[NSMutableArray alloc] init];
     
     UIView *chessBlackSquad = [[UIView alloc] initWithFrame:CGRectMake(0, (self.view.frame.size.height - self.view.frame.size.width) / 2,
                                                                        self.view.frame.size.width, self.view.frame.size.width)];
@@ -65,6 +69,7 @@
                                                                       (superView.frame.size.width - 2) / 8, (superView.frame.size.height - 2) / 8)];
         blackSquad.backgroundColor = [UIColor blackColor];
         [superView addSubview:blackSquad];
+        [_blackSquads addObject: blackSquad];
         
         if (j != 3 && j != 4) {
             UIView *smallSquad = [[UIView alloc] initWithFrame:CGRectMake(blackSquad.frame.origin.x + blackSquad.frame.size.width / 4,
@@ -72,12 +77,13 @@
                                                                           (superView.frame.size.width - 2) / 16, (superView.frame.size.height - 2) / 16)];
             smallSquad.backgroundColor = [UIColor yellowColor];
             [superView addSubview:smallSquad];
+            [_smallSquads addObject: smallSquad];
         }
     }
     
 }
 
-- (void) changeColorOfSquads:(UIView *)squads {
+- (void) changeColorOfSquads {
     
     UIColor *randomColor = [[UIColor alloc] init];
     
@@ -110,11 +116,32 @@
             break;
     }
     
-    for (UIView *squad in squads.subviews) {
-        if (squad.bounds.size.height == (squads.frame.size.width - 2) / 8) {
+    for (UIView *squad in _blackSquads) {
             squad.backgroundColor = randomColor;
-        }
     }
+    
+    for (UIView *smallSquad in _smallSquads) {
+        
+        int i = arc4random() % [_smallSquads count];
+        
+        while (i == [_smallSquads indexOfObject:smallSquad]) {
+            i = arc4random() % [_smallSquads count];
+        }
+        
+        UIView *anotherSmallSquad = _smallSquads[i];
+        CGRect rectOfAnotherSmallSquad = anotherSmallSquad.frame;
+        CGRect rectSmallSquad = smallSquad.frame;
+        
+        [UIView animateWithDuration:1.5 animations:^{
+            
+            [smallSquad setFrame:rectOfAnotherSmallSquad];
+            [anotherSmallSquad setFrame:rectSmallSquad];
+            [_squads bringSubviewToFront:smallSquad];
+            [_squads bringSubviewToFront:anotherSmallSquad];
+            
+        }];
+    }
+    
     
 }
 
@@ -122,7 +149,7 @@
 
 - (void) viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
     
-    [self changeColorOfSquads:self.squads];
+    [self changeColorOfSquads];
     
 }
 
