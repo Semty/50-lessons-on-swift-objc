@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HW22" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h8w-9j-QbG" userLabel="blackTable">
+                                <frame key="frameInset" minX="49.33%" minY="49.32%" width="300" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qj1-BL-1o9" userLabel="whiteTable">
+                                        <frame key="frameInset" minX="50.00%" minY="50.00%" width="298" height="298"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xX3-9M-Wxi" userLabel="blackSquad1">
+                                                <frame key="frameInset" minX="0.38%" minY="0.38%" width="37" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fcW-Sv-5xw" userLabel="blackSquad2">
+                                                <frame key="frameInset" minX="57.09%" minY="0.38%" width="37" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l91-ad-ZWk" userLabel="blackSquad3">
+                                                <frame key="frameInset" minX="85.44%" minY="0.38%" width="37" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Hf-jL-CnO" userLabel="blackSquad4">
+                                                <frame key="frameInset" minX="28.74%" minY="0.38%" width="37" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sx4-eQ-Lca" userLabel="blackSquad5">
+                                                <frame key="frameInset" minX="14.56%" minY="14.56%" width="37" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cTr-ke-bsc" userLabel="blackSquad6">
+                                                <frame key="frameInset" minX="42.91%" minY="14.56%" width="37" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dJY-8k-81A" userLabel="blackSquad7">
+                                                <frame key="frameInset" minX="71.26%" minY="14.56%" width="37" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tx0-ok-fH8" userLabel="blackSquad8">
+                                                <frame key="frameInset" minX="99.62%" minY="14.56%" width="37" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dPg-BG-xf2" userLabel="blackSquad9">
+                                                <frame key="frameInset" minX="0.38%" minY="28.74%" width="37" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mRL-KT-lgY" userLabel="blackSquad10">
+                                                <frame key="frameInset" minX="28.74%" minY="28.74%" width="37" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jpe-KS-1km" userLabel="blackSquad11">
+                                                <frame key="frameInset" minX="57.09%" minY="28.74%" width="37" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7qo-A5-3KZ" userLabel="blackSquad12">
+                                                <frame key="frameInset" minX="85.44%" minY="28.74%" width="37" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q1Q-CK-7P9" userLabel="blackSquad13">
+                                                <frame key="frameInset" minX="14.56%" minY="42.91%" width="37" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kRx-sK-4Bd" userLabel="blackSquad14">
+                                                <frame key="frameInset" minX="42.91%" minY="42.91%" width="37" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VXh-b1-Yvi" userLabel="blackSquad15">
+                                                <frame key="frameInset" minX="71.26%" minY="42.91%" width="37" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rtN-42-lJm" userLabel="blackSquad16">
+                                                <frame key="frameInset" minX="99.62%" minY="42.91%" width="37" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qvx-De-ebE" userLabel="blackSquad17">
+                                                <frame key="frameInset" minX="28.74%" minY="57.09%" width="37" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hp9-3R-IgB" userLabel="blackSquad18">
+                                                <frame key="frameInset" minX="57.09%" minY="57.09%" width="37" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a6N-wg-d5b" userLabel="blackSquad19">
+                                                <frame key="frameInset" minX="0.38%" minY="57.09%" width="37" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZGL-Mq-Lcn" userLabel="blackSquad20">
+                                                <frame key="frameInset" minX="99.62%" minY="71.26%" width="37" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fte-QE-8Rg" userLabel="blackSquad21">
+                                                <frame key="frameInset" minX="85.44%" minY="57.09%" width="37" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c1t-b1-lqa" userLabel="blackSquad22">
+                                                <frame key="frameInset" minX="42.91%" minY="71.26%" width="37" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aBO-d5-lTj" userLabel="blackSquad23">
+                                                <frame key="frameInset" minX="71.26%" minY="71.26%" width="37" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vgy-qw-eGa" userLabel="blackSquad24">
+                                                <frame key="frameInset" minX="14.56%" minY="71.26%" width="37" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VEF-tO-J17" userLabel="blackSquad25">
+                                                <frame key="frameInset" minX="0.38%" minY="85.44%" width="37" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sjO-qZ-KrS" userLabel="blackSquad26">
+                                                <frame key="frameInset" minX="28.74%" minY="85.44%" width="37" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OSU-gD-ifs" userLabel="blackSquad27">
+                                                <frame key="frameInset" minX="57.09%" minY="85.44%" width="37" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uiw-MC-a5c" userLabel="blackSquad28">
+                                                <frame key="frameInset" minX="85.44%" minY="85.44%" width="37" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YuK-Xh-vuQ" userLabel="blackSquad29">
+                                                <frame key="frameInset" minX="99.62%" minY="99.62%" width="37" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JDU-da-DY9" userLabel="blackSquad30">
+                                                <frame key="frameInset" minX="71.26%" minY="99.62%" width="37" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CzF-ii-qSA" userLabel="blackSquad31">
+                                                <frame key="frameInset" minX="42.91%" minY="99.62%" width="37" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OZ1-cr-XsM" userLabel="blackSquad32">
+                                                <frame key="frameInset" minX="14.56%" minY="99.62%" width="37" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red.png" translatesAutoresizingMaskIntoConstraints="NO" id="heo-C2-ELd">
+                                                <frame key="frameInset" minX="3.58%" minY="3.57%" width="19" height="18"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red.png" translatesAutoresizingMaskIntoConstraints="NO" id="dfJ-3K-M84">
+                                                <frame key="frameInset" minX="30.11%" minY="3.57%" width="19" height="18"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red.png" translatesAutoresizingMaskIntoConstraints="NO" id="sdB-qE-oSi">
+                                                <frame key="frameInset" minX="56.63%" minY="3.57%" width="19" height="18"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red.png" translatesAutoresizingMaskIntoConstraints="NO" id="Mca-zv-vqi">
+                                                <frame key="frameInset" minX="83.15%" minY="3.57%" width="19" height="18"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red.png" translatesAutoresizingMaskIntoConstraints="NO" id="f8V-2l-FBN">
+                                                <frame key="frameInset" minX="16.85%" minY="16.79%" width="19" height="18"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red.png" translatesAutoresizingMaskIntoConstraints="NO" id="eUZ-rh-EP1">
+                                                <frame key="frameInset" minX="83.15%" minY="30.00%" width="19" height="18"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red.png" translatesAutoresizingMaskIntoConstraints="NO" id="0SH-sD-r3t">
+                                                <frame key="frameInset" minX="56.63%" minY="30.00%" width="19" height="18"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red.png" translatesAutoresizingMaskIntoConstraints="NO" id="Hjy-Ga-ccl">
+                                                <frame key="frameInset" minX="30.11%" minY="30.00%" width="19" height="18"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red.png" translatesAutoresizingMaskIntoConstraints="NO" id="vXM-Wy-Jkc">
+                                                <frame key="frameInset" minX="3.58%" minY="30.00%" width="19" height="18"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red.png" translatesAutoresizingMaskIntoConstraints="NO" id="aiW-Sn-Sqv">
+                                                <frame key="frameInset" minX="96.42%" minY="16.79%" width="19" height="18"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red.png" translatesAutoresizingMaskIntoConstraints="NO" id="Zsk-9k-fNA">
+                                                <frame key="frameInset" minX="69.89%" minY="16.79%" width="19" height="18"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red.png" translatesAutoresizingMaskIntoConstraints="NO" id="a0n-Cw-lPR">
+                                                <frame key="frameInset" minX="43.37%" minY="16.79%" width="19" height="18"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="white.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xni-7X-kzB">
+                                                <frame key="frameInset" minX="16.85%" minY="69.64%" width="19" height="18"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="white.png" translatesAutoresizingMaskIntoConstraints="NO" id="akN-77-fbf">
+                                                <frame key="frameInset" minX="96.42%" minY="96.07%" width="19" height="18"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="white.png" translatesAutoresizingMaskIntoConstraints="NO" id="48P-E5-1ba">
+                                                <frame key="frameInset" minX="69.89%" minY="96.07%" width="19" height="18"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="white.png" translatesAutoresizingMaskIntoConstraints="NO" id="eOa-VA-tYe">
+                                                <frame key="frameInset" minX="43.37%" minY="96.07%" width="19" height="18"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="white.png" translatesAutoresizingMaskIntoConstraints="NO" id="rTA-yf-cJz">
+                                                <frame key="frameInset" minX="16.85%" minY="96.07%" width="19" height="18"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="white.png" translatesAutoresizingMaskIntoConstraints="NO" id="LDq-Xd-xKA">
+                                                <frame key="frameInset" minX="83.15%" minY="82.86%" width="19" height="18"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="white.png" translatesAutoresizingMaskIntoConstraints="NO" id="Bsc-Ex-HF4">
+                                                <frame key="frameInset" minX="56.27%" minY="82.86%" width="19" height="18"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="white.png" translatesAutoresizingMaskIntoConstraints="NO" id="ABC-tJ-scu">
+                                                <frame key="frameInset" minX="30.11%" minY="82.86%" width="19" height="18"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="white.png" translatesAutoresizingMaskIntoConstraints="NO" id="bOn-Ld-99M">
+                                                <frame key="frameInset" minX="3.58%" minY="82.86%" width="19" height="18"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="white.png" translatesAutoresizingMaskIntoConstraints="NO" id="EB1-i4-XTK">
+                                                <frame key="frameInset" minX="96.42%" minY="69.64%" width="19" height="18"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="white.png" translatesAutoresizingMaskIntoConstraints="NO" id="wiI-X4-ybf">
+                                                <frame key="frameInset" minX="69.89%" minY="69.64%" width="19" height="18"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="white.png" translatesAutoresizingMaskIntoConstraints="NO" id="GwW-BR-XT9">
+                                                <frame key="frameInset" minX="43.37%" minY="69.64%" width="19" height="18"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="whiteTable" destination="Qj1-BL-1o9" id="vCb-tJ-0Fu"/>
+                        <outletCollection property="chessTable" destination="xX3-9M-Wxi" collectionClass="NSMutableArray" id="NF8-bG-NlC"/>
+                        <outletCollection property="chessTable" destination="fcW-Sv-5xw" collectionClass="NSMutableArray" id="8us-tQ-LHT"/>
+                        <outletCollection property="chessTable" destination="l91-ad-ZWk" collectionClass="NSMutableArray" id="9zQ-sP-Tr8"/>
+                        <outletCollection property="chessTable" destination="5Hf-jL-CnO" collectionClass="NSMutableArray" id="E6A-eO-hXv"/>
+                        <outletCollection property="chessTable" destination="Sx4-eQ-Lca" collectionClass="NSMutableArray" id="Sfm-4H-fKg"/>
+                        <outletCollection property="chessTable" destination="cTr-ke-bsc" collectionClass="NSMutableArray" id="kJG-ZY-5oT"/>
+                        <outletCollection property="chessTable" destination="dJY-8k-81A" collectionClass="NSMutableArray" id="oyF-k5-RiE"/>
+                        <outletCollection property="chessTable" destination="Tx0-ok-fH8" collectionClass="NSMutableArray" id="fCz-PS-c8f"/>
+                        <outletCollection property="chessTable" destination="dPg-BG-xf2" collectionClass="NSMutableArray" id="bAb-eN-e4M"/>
+                        <outletCollection property="chessTable" destination="mRL-KT-lgY" collectionClass="NSMutableArray" id="9c7-RV-44F"/>
+                        <outletCollection property="chessTable" destination="Jpe-KS-1km" collectionClass="NSMutableArray" id="1Xy-wx-EaF"/>
+                        <outletCollection property="chessTable" destination="7qo-A5-3KZ" collectionClass="NSMutableArray" id="KSa-ph-idb"/>
+                        <outletCollection property="chessTable" destination="q1Q-CK-7P9" collectionClass="NSMutableArray" id="URp-h4-dqC"/>
+                        <outletCollection property="chessTable" destination="kRx-sK-4Bd" collectionClass="NSMutableArray" id="BnL-b2-fZu"/>
+                        <outletCollection property="chessTable" destination="VXh-b1-Yvi" collectionClass="NSMutableArray" id="YQV-EC-fGW"/>
+                        <outletCollection property="chessTable" destination="rtN-42-lJm" collectionClass="NSMutableArray" id="B0T-m2-tfH"/>
+                        <outletCollection property="chessTable" destination="Qvx-De-ebE" collectionClass="NSMutableArray" id="Wc5-xy-waH"/>
+                        <outletCollection property="chessTable" destination="Hp9-3R-IgB" collectionClass="NSMutableArray" id="OFI-ai-iIN"/>
+                        <outletCollection property="chessTable" destination="a6N-wg-d5b" collectionClass="NSMutableArray" id="1co-jY-Z7f"/>
+                        <outletCollection property="chessTable" destination="ZGL-Mq-Lcn" collectionClass="NSMutableArray" id="zHC-Ke-nie"/>
+                        <outletCollection property="chessTable" destination="Fte-QE-8Rg" collectionClass="NSMutableArray" id="TPw-AQ-440"/>
+                        <outletCollection property="chessTable" destination="c1t-b1-lqa" collectionClass="NSMutableArray" id="9s0-r0-wqh"/>
+                        <outletCollection property="chessTable" destination="aBO-d5-lTj" collectionClass="NSMutableArray" id="Zs9-j3-qLH"/>
+                        <outletCollection property="chessTable" destination="Vgy-qw-eGa" collectionClass="NSMutableArray" id="Rhm-fA-Ndj"/>
+                        <outletCollection property="chessTable" destination="VEF-tO-J17" collectionClass="NSMutableArray" id="7cL-J3-2Rp"/>
+                        <outletCollection property="chessTable" destination="sjO-qZ-KrS" collectionClass="NSMutableArray" id="pfr-Pm-jPP"/>
+                        <outletCollection property="chessTable" destination="OSU-gD-ifs" collectionClass="NSMutableArray" id="UwE-2M-aMv"/>
+                        <outletCollection property="chessTable" destination="uiw-MC-a5c" collectionClass="NSMutableArray" id="Irb-cQ-5ND"/>
+                        <outletCollection property="chessTable" destination="YuK-Xh-vuQ" collectionClass="NSMutableArray" id="Jiy-hG-Igo"/>
+                        <outletCollection property="chessTable" destination="JDU-da-DY9" collectionClass="NSMutableArray" id="mMV-Vu-zV6"/>
+                        <outletCollection property="chessTable" destination="CzF-ii-qSA" collectionClass="NSMutableArray" id="WDY-GR-Nch"/>
+                        <outletCollection property="chessTable" destination="OZ1-cr-XsM" collectionClass="NSMutableArray" id="WnA-aE-elj"/>
+                        <outletCollection property="smallSquadsFirst" destination="heo-C2-ELd" collectionClass="NSMutableArray" id="c4p-zA-31R"/>
+                        <outletCollection property="smallSquadsFirst" destination="dfJ-3K-M84" collectionClass="NSMutableArray" id="1KT-ps-02z"/>
+                        <outletCollection property="smallSquadsFirst" destination="sdB-qE-oSi" collectionClass="NSMutableArray" id="9iO-X1-5f1"/>
+                        <outletCollection property="smallSquadsFirst" destination="Mca-zv-vqi" collectionClass="NSMutableArray" id="S1u-L6-r4s"/>
+                        <outletCollection property="smallSquadsFirst" destination="f8V-2l-FBN" collectionClass="NSMutableArray" id="XF2-c3-VsM"/>
+                        <outletCollection property="smallSquadsFirst" destination="eUZ-rh-EP1" collectionClass="NSMutableArray" id="Opp-NL-yJY"/>
+                        <outletCollection property="smallSquadsFirst" destination="0SH-sD-r3t" collectionClass="NSMutableArray" id="gS8-Ek-JLb"/>
+                        <outletCollection property="smallSquadsFirst" destination="Hjy-Ga-ccl" collectionClass="NSMutableArray" id="0Gh-zR-s2R"/>
+                        <outletCollection property="smallSquadsFirst" destination="vXM-Wy-Jkc" collectionClass="NSMutableArray" id="p7j-FN-kSY"/>
+                        <outletCollection property="smallSquadsFirst" destination="aiW-Sn-Sqv" collectionClass="NSMutableArray" id="61D-i9-6rV"/>
+                        <outletCollection property="smallSquadsFirst" destination="Zsk-9k-fNA" collectionClass="NSMutableArray" id="3Vm-H2-a1K"/>
+                        <outletCollection property="smallSquadsFirst" destination="a0n-Cw-lPR" collectionClass="NSMutableArray" id="lCu-qV-YER"/>
+                        <outletCollection property="smallSquadsSecond" destination="Xni-7X-kzB" collectionClass="NSMutableArray" id="gUo-vw-8cn"/>
+                        <outletCollection property="smallSquadsSecond" destination="akN-77-fbf" collectionClass="NSMutableArray" id="yhb-Jm-0ok"/>
+                        <outletCollection property="smallSquadsSecond" destination="48P-E5-1ba" collectionClass="NSMutableArray" id="HLJ-3J-P3H"/>
+                        <outletCollection property="smallSquadsSecond" destination="eOa-VA-tYe" collectionClass="NSMutableArray" id="GgV-bY-6Mh"/>
+                        <outletCollection property="smallSquadsSecond" destination="rTA-yf-cJz" collectionClass="NSMutableArray" id="v34-O2-vWt"/>
+                        <outletCollection property="smallSquadsSecond" destination="LDq-Xd-xKA" collectionClass="NSMutableArray" id="Jyt-2Z-Km9"/>
+                        <outletCollection property="smallSquadsSecond" destination="Bsc-Ex-HF4" collectionClass="NSMutableArray" id="eRw-LH-iDV"/>
+                        <outletCollection property="smallSquadsSecond" destination="ABC-tJ-scu" collectionClass="NSMutableArray" id="PW8-10-9Xe"/>
+                        <outletCollection property="smallSquadsSecond" destination="bOn-Ld-99M" collectionClass="NSMutableArray" id="mpJ-nc-Wnc"/>
+                        <outletCollection property="smallSquadsSecond" destination="EB1-i4-XTK" collectionClass="NSMutableArray" id="n0B-f1-CE6"/>
+                        <outletCollection property="smallSquadsSecond" destination="wiI-X4-ybf" collectionClass="NSMutableArray" id="iQo-0y-b4Q"/>
+                        <outletCollection property="smallSquadsSecond" destination="GwW-BR-XT9" collectionClass="NSMutableArray" id="JqJ-tb-iiB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="40.799999999999997" y="43.628185907046479"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="red.png" width="744" height="744"/>
+        <image name="white.png" width="699" height="705"/>
+    </resources>
+</document>
