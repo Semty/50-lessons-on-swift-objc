@@ -27,7 +27,7 @@
                                 <rect key="frame" x="310" y="356" width="51" height="31"/>
                                 <color key="onTintColor" red="1" green="0.61960784313725492" blue="0.62745098039215685" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
-                                    <action selector="actionSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="Cgp-GA-n7I"/>
+                                    <action selector="actionSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="IKv-bH-WUT"/>
                                 </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rotation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOh-d5-Z42">
@@ -40,21 +40,21 @@
                                 <rect key="frame" x="310" y="400" width="51" height="31"/>
                                 <color key="onTintColor" red="1" green="0.62141927080000003" blue="0.62578667529999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
-                                    <action selector="actionSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="fL1-3y-ZVX"/>
+                                    <action selector="actionSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="c3t-VE-I5w"/>
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8HS-qH-QZc">
                                 <rect key="frame" x="310" y="444" width="51" height="31"/>
                                 <color key="onTintColor" red="1" green="0.62141927080000003" blue="0.62578667529999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
-                                    <action selector="actionSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="x7t-LL-UAI"/>
+                                    <action selector="actionSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="d4u-1E-zyB"/>
                                 </connections>
                             </switch>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.5" maxValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="0RC-yV-cBb">
                                 <rect key="frame" x="110" y="617" width="251" height="31"/>
                                 <color key="minimumTrackTintColor" red="1" green="0.61960784313725492" blue="0.62745098039215685" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
-                                    <action selector="actionSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="vs2-No-Npv"/>
+                                    <action selector="actionSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="Xhp-pd-8y0"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speed" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T3M-qt-USD">
@@ -72,8 +72,7 @@
                                 </segments>
                                 <color key="tintColor" red="0.3229709201388889" green="0.77113172743055558" blue="0.72545030381944442" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
-                                    <action selector="ActionSegmentedControl:" destination="BYZ-38-t0r" eventType="valueChanged" id="oki-II-D0G"/>
-                                    <action selector="actionSegmentedControl:" destination="BYZ-38-t0r" eventType="valueChanged" id="mIL-nS-eYH"/>
+                                    <action selector="actionSegmentedControl:" destination="BYZ-38-t0r" eventType="valueChanged" id="vUU-9t-Djg"/>
                                 </connections>
                             </segmentedControl>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Po.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hEw-Nr-vmf">
@@ -133,7 +132,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="actionSegmentedControl" destination="w21-RG-ycR" id="spU-jT-vT3"/>
                         <outlet property="draggingView" destination="hEw-Nr-vmf" id="o0H-x0-aOI"/>
                         <outlet property="rotationSwitch" destination="Xoa-N3-23l" id="FgB-o7-9S7"/>
                         <outlet property="scaleSwitch" destination="3FV-Cr-Fbs" id="KhV-bh-bmg"/>
