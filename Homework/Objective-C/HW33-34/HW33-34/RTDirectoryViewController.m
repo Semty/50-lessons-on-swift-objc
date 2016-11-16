@@ -6,6 +6,7 @@
 //  Copyright © 2016 Ruslan Timchenko. All rights reserved.
 //
 
+#import <ChameleonFramework/Chameleon.h>
 #import "RTDirectoryViewController.h"
 #import "RTNewFolderViewController.h"
 #import "RTFolderCell.h"
@@ -308,7 +309,6 @@ static NSString *addCellIdentifier = @"addIdentifier";
         cell.nameLabel.text = fileName;
         cell.folderSizeLabel.text = [self folderSizeFromFolderPath:[self.path stringByAppendingPathComponent:fileName]];
         cell.dateLabel.text = [self formatDateFromAttributes:attributes];
-        cell.backgroundColor = [UIColor lightTextColor];
         
         return cell;
     } else if (![fileName isEqualToString:addCellIdentifier]) {
@@ -325,15 +325,12 @@ static NSString *addCellIdentifier = @"addIdentifier";
         
         cell.nameLabel.text = fileName;
         cell.fileSizeLabel.text = [self fileSizeFromValue:[attributes fileSize]];
-        cell.fileSizeLabel.textColor = [UIColor darkGrayColor];
         cell.dateLabel.text = [self formatDateFromAttributes:attributes];
-        cell.backgroundColor = [UIColor lightTextColor];
         
         return cell;
     } else {
         
         RTAddCell *cell = [self.tableView dequeueReusableCellWithIdentifier:addCellIdentifier];
-        cell.backgroundColor = [UIColor lightTextColor];
         
         return cell;
     }
@@ -385,6 +382,12 @@ static NSString *addCellIdentifier = @"addIdentifier";
                                                          handler:^(UIAlertAction * _Nonnull action) {
                                                              dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                                                                  [self.tableView setEditing:NO animated:YES];
+                                                                 
+                                                                 if ([self.contents[0] isEqualToString:addCellIdentifier]) {
+                                                                     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+                                                                     
+                                                                     [self deleteAddCellToTableViewWithIndexPath:indexPath];
+                                                                 }
                                                              });
                                                          }];
         [alert addAction:actionYes];
@@ -426,18 +429,3 @@ static NSString *addCellIdentifier = @"addIdentifier";
 }
 
 @end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

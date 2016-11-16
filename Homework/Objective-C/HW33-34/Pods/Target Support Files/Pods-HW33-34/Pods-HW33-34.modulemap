@@ -1,0 +1,6 @@
+framework module Pods_HW33_34 {
+  umbrella header "Pods-HW33-34-umbrella.h"
+
+  export *
+  module * { export * }
+}
