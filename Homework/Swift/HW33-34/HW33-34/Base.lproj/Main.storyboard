@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vxn-cf-i23">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Name of the directory-->
+        <scene sceneID="o4m-FE-p9k">
+            <objects>
+                <tableViewController storyboardIdentifier="DirectoryViewController" id="oOt-7r-yl9" customClass="DirectoryViewController" customModule="HW33_34" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="nyD-Ie-x0v">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.18998533487319946" green="0.35768887400627136" blue="0.43821841478347778" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="separatorColor" red="0.42655369639396667" green="0.47584608197212219" blue="0.48026475310325623" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="addCellIdentifier" id="s0o-kC-3nX" customClass="AddCell" customModule="HW33_34">
+                                <rect key="frame" x="0.0" y="56" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="s0o-kC-3nX" id="t4V-ah-bXa">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yc8-Ug-Qpp">
+                                            <rect key="frame" x="167" y="1" width="40" height="40"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES"/>
+                                            <state key="normal" title="Button" image="plus.png"/>
+                                            <connections>
+                                                <segue destination="TtS-HD-3kg" kind="show" identifier="NewFolderViewController" id="sWa-sN-K5E"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="plusImage" destination="Yc8-Ug-Qpp" id="b7U-SJ-J6U"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="folderIdentifier" rowHeight="70" id="y7a-48-jwQ" customClass="FolderCell" customModule="HW33_34">
+                                <rect key="frame" x="0.0" y="100" width="375" height="70"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="y7a-48-jwQ" id="SFU-hI-yyX">
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="69"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="folder.png" translatesAutoresizingMaskIntoConstraints="NO" id="c1n-Ml-Zdt">
+                                            <rect key="frame" x="10" y="10" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Folder name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4J-IM-4O0">
+                                            <rect key="frame" x="75" y="22" width="178" height="24"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <color key="textColor" red="0.11181893199682236" green="0.1118365004658699" blue="0.1118125319480896" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KS7-u2-p6r">
+                                            <rect key="frame" x="275" y="25" width="59" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.12637259066104889" green="0.12639245390892029" blue="0.12636536359786987" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P0o-jq-W0Y">
+                                            <rect key="frame" x="75" y="40" width="59" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                            <color key="textColor" red="0.15410047769546509" green="0.41306763887405396" blue="0.69063264131546021" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="dateLabel" destination="P0o-jq-W0Y" id="i6A-kT-dDm"/>
+                                    <outlet property="folderImage" destination="c1n-Ml-Zdt" id="AIE-mK-Ssn"/>
+                                    <outlet property="folderSizeLabel" destination="KS7-u2-p6r" id="tGW-C5-vDf"/>
+                                    <outlet property="nameLabel" destination="t4J-IM-4O0" id="AoX-RA-Os9"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="fileIdentifier" rowHeight="70" id="ui0-jM-cGE" customClass="FileCell" customModule="HW33_34">
+                                <rect key="frame" x="0.0" y="170" width="375" height="70"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ui0-jM-cGE" id="LJQ-AW-h9G">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="file.png" translatesAutoresizingMaskIntoConstraints="NO" id="7gp-CU-2w5">
+                                            <rect key="frame" x="10" y="10" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="File name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I1U-1V-jqj">
+                                            <rect key="frame" x="75" y="23" width="178" height="24"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <color key="textColor" red="0.11181893199682236" green="0.1118365004658699" blue="0.1118125319480896" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ttz-Gs-yd7">
+                                            <rect key="frame" x="273" y="25" width="59" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.12637259066104889" green="0.12639245390892029" blue="0.12636536359786987" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Flr-pK-C9K">
+                                            <rect key="frame" x="75" y="40" width="59" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                            <color key="textColor" red="0.15410047769546509" green="0.41306763887405396" blue="0.69063264131546021" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="dateLabel" destination="Flr-pK-C9K" id="faH-qe-MEE"/>
+                                    <outlet property="fileImage" destination="7gp-CU-2w5" id="PY7-bq-x4n"/>
+                                    <outlet property="fileSizeLabel" destination="Ttz-Gs-yd7" id="ZY5-Rw-yRS"/>
+                                    <outlet property="nameLabel" destination="I1U-1V-jqj" id="btc-P3-yl1"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="oOt-7r-yl9" id="d3o-tt-yoG"/>
+                            <outlet property="delegate" destination="oOt-7r-yl9" id="CMu-9v-Scc"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Name of the directory" id="c2d-cI-1cX">
+                        <rightBarButtonItems>
+                            <barButtonItem tag="1" image="home.png" id="YCn-nN-xxT">
+                                <connections>
+                                    <action selector="actionToRoot:" destination="oOt-7r-yl9" id="FDn-Nk-Zmf"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="edit" id="lar-5s-Lco">
+                                <connections>
+                                    <action selector="actionEdit:" destination="oOt-7r-yl9" id="A6D-fn-hHc"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t3U-Um-aaV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="580" y="103.89805097451276"/>
+        </scene>
+        <!--Create folder-->
+        <scene sceneID="DCe-on-DQz">
+            <objects>
+                <viewController title="Create folder" id="TtS-HD-3kg" customClass="NewFolderViewController" customModule="HW33_34" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DL3-Ds-sQA"/>
+                        <viewControllerLayoutGuide type="bottom" id="xhH-gw-ZjC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9hJ-E2-yZV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Folder Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Fap-ak-OZA">
+                                <rect key="frame" x="16" y="129" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="actionTextField:" destination="TtS-HD-3kg" eventType="editingChanged" id="hvb-AC-NQ3"/>
+                                    <outlet property="delegate" destination="TtS-HD-3kg" id="2aD-Vo-WCU"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jx9-5y-DiL">
+                                <rect key="frame" x="137" y="178" width="100" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Create">
+                                    <color key="titleColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionCreateFolder:" destination="TtS-HD-3kg" eventType="touchUpInside" id="2k4-8V-ni1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.18998533487319946" green="0.35768887400627136" blue="0.43821841478347778" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iRF-Gx-AqN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1322" y="-164"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="YUa-ri-GuW">
+            <objects>
+                <navigationController id="vxn-cf-i23" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kRJ-WB-Qcu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.18998533487319946" green="0.35768887400627136" blue="0.43821841478347778" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="oOt-7r-yl9" kind="relationship" relationship="rootViewController" id="9Dh-Og-wxZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kxx-Rt-ITI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-372" y="104"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="file.png" width="128" height="128"/>
+        <image name="folder.png" width="128" height="128"/>
+        <image name="home.png" width="24" height="24"/>
+        <image name="plus.png" width="128" height="128"/>
+    </resources>
+</document>
