@@ -34,22 +34,22 @@
                                 <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="f9d-sM-Vlc" id="coy-V1-d6d">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="user.png" translatesAutoresizingMaskIntoConstraints="NO" id="uol-iQ-8fi">
-                                            <rect key="frame" x="7" y="3" width="35" height="35"/>
+                                            <rect key="frame" x="7" y="2" width="34" height="36"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="date of birth" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ueu-jp-3D0">
-                                            <rect key="frame" x="239" y="12" width="120" height="17"/>
+                                            <rect key="frame" x="238" y="12" width="121" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" red="0.15410047769546509" green="0.41306763887405396" blue="0.69063264131546021" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="fullname" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5J-Qd-1EX">
-                                            <rect key="frame" x="50" y="12" width="181" height="16"/>
+                                            <rect key="frame" x="49" y="12" width="182" height="15"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.17257410287857056" green="0.21834245324134827" blue="0.44677489995956421" alpha="1" colorSpace="calibratedRGB"/>
@@ -72,7 +72,7 @@
                     <navigationItem key="navigationItem" prompt="List of People" id="pwv-DM-Bjy">
                         <nil key="title"/>
                         <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="Re3-YC-gdb">
-                            <rect key="frame" x="72" y="37" width="232" height="30"/>
+                            <rect key="frame" x="71" y="37" width="232" height="30"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                             <segments>
                                 <segment title="Month"/>
@@ -103,7 +103,7 @@
         <scene sceneID="c4z-fT-kVG">
             <objects>
                 <navigationController id="wFl-x6-jph" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="UGy-0Y-JdU">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UGy-0Y-JdU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.68888300657272339" green="0.71366006135940552" blue="0.73448425531387329" alpha="1" colorSpace="calibratedRGB"/>
