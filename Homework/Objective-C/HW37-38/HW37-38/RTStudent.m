@@ -10,14 +10,6 @@
 
 @interface RTStudent ()
 
-@property (strong, nonatomic) NSString *birthday;
-
-@property (strong, nonatomic) NSString *name;
-@property (strong, nonatomic) NSString *surname;
-
-@property (assign, nonatomic) double longitude;
-@property (assign, nonatomic) double latitude;
-
 @end
 
 @implementation RTStudent

@@ -12,6 +12,9 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)actionAddStudent:(UIBarButtonItem *)sender;
+- (IBAction)actionAddMeeting:(UIBarButtonItem *)sender;
+
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 - (IBAction)actionShowAll:(UIBarButtonItem *)sender;
 

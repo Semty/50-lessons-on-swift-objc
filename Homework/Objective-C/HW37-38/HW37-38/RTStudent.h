@@ -18,11 +18,23 @@ typedef enum {
 
 @interface RTStudent : NSObject <MKAnnotation>
 
+@property (assign, nonatomic) BOOL meetingState;
+@property (strong, nonatomic) NSString *meetingDistance;
+
 @property (assign, nonatomic) RTGender gender;
 
 @property (nonatomic, assign) CLLocationCoordinate2D coordinate;
 
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *subtitle;
+
+
+@property (strong, nonatomic) NSString *birthday;
+
+@property (strong, nonatomic) NSString *name;
+@property (strong, nonatomic) NSString *surname;
+
+@property (assign, nonatomic) double longitude;
+@property (assign, nonatomic) double latitude;
 
 @end

@@ -16,6 +16,14 @@
 		440E78B51DF994E300B0451B /* RTStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 440E78B41DF994E300B0451B /* RTStudent.m */; };
 		440E78B81DF99B8400B0451B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 440E78B71DF99B8400B0451B /* MapKit.framework */; };
 		440E78BB1DF99F2D00B0451B /* person.png in Resources */ = {isa = PBXBuildFile; fileRef = 440E78BA1DF99F2D00B0451B /* person.png */; };
+		441F638D1DFD52DA0069FA2E /* RTMeetingPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 441F638C1DFD52DA0069FA2E /* RTMeetingPoint.m */; };
+		441F638F1DFD53880069FA2E /* meeting.png in Resources */ = {isa = PBXBuildFile; fileRef = 441F638E1DFD53880069FA2E /* meeting.png */; };
+		444792171DFF2A8800D3330D /* RTMeetingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 444792161DFF2A8800D3330D /* RTMeetingViewController.m */; };
+		4447921A1DFF378E00D3330D /* RTMeetingViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 444792191DFF378E00D3330D /* RTMeetingViewCell.m */; };
+		4447921D1DFF390100D3330D /* cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = 4447921B1DFF390100D3330D /* cancel.png */; };
+		4447921E1DFF390100D3330D /* checked.png in Resources */ = {isa = PBXBuildFile; fileRef = 4447921C1DFF390100D3330D /* checked.png */; };
+		447D9A9F1DFC0D87004538C6 /* UIView+MKAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 447D9A9E1DFC0D87004538C6 /* UIView+MKAnnotationView.m */; };
+		447D9AA21DFC1BA2004538C6 /* RTDescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 447D9AA11DFC1BA2004538C6 /* RTDescriptionViewController.m */; };
 		44F7CEB51DF9EB3200E22977 /* man.png in Resources */ = {isa = PBXBuildFile; fileRef = 44F7CEB21DF9EB3200E22977 /* man.png */; };
 		44F7CEB61DF9EB3200E22977 /* person.png in Resources */ = {isa = PBXBuildFile; fileRef = 44F7CEB31DF9EB3200E22977 /* person.png */; };
 		44F7CEB71DF9EB3200E22977 /* woman.png in Resources */ = {isa = PBXBuildFile; fileRef = 44F7CEB41DF9EB3200E22977 /* woman.png */; };
@@ -36,6 +44,19 @@
 		440E78B41DF994E300B0451B /* RTStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTStudent.m; sourceTree = "<group>"; };
 		440E78B71DF99B8400B0451B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		440E78BA1DF99F2D00B0451B /* person.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = person.png; sourceTree = "<group>"; };
+		441F638B1DFD52DA0069FA2E /* RTMeetingPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTMeetingPoint.h; sourceTree = "<group>"; };
+		441F638C1DFD52DA0069FA2E /* RTMeetingPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTMeetingPoint.m; sourceTree = "<group>"; };
+		441F638E1DFD53880069FA2E /* meeting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meeting.png; sourceTree = "<group>"; };
+		444792151DFF2A8800D3330D /* RTMeetingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTMeetingViewController.h; sourceTree = "<group>"; };
+		444792161DFF2A8800D3330D /* RTMeetingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTMeetingViewController.m; sourceTree = "<group>"; };
+		444792181DFF378E00D3330D /* RTMeetingViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTMeetingViewCell.h; sourceTree = "<group>"; };
+		444792191DFF378E00D3330D /* RTMeetingViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTMeetingViewCell.m; sourceTree = "<group>"; };
+		4447921B1DFF390100D3330D /* cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cancel.png; sourceTree = "<group>"; };
+		4447921C1DFF390100D3330D /* checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checked.png; sourceTree = "<group>"; };
+		447D9A9D1DFC0D87004538C6 /* UIView+MKAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MKAnnotationView.h"; sourceTree = "<group>"; };
+		447D9A9E1DFC0D87004538C6 /* UIView+MKAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MKAnnotationView.m"; sourceTree = "<group>"; };
+		447D9AA01DFC1BA2004538C6 /* RTDescriptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTDescriptionViewController.h; sourceTree = "<group>"; };
+		447D9AA11DFC1BA2004538C6 /* RTDescriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTDescriptionViewController.m; sourceTree = "<group>"; };
 		44F7CEB21DF9EB3200E22977 /* man.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = man.png; sourceTree = "<group>"; };
 		44F7CEB31DF9EB3200E22977 /* person.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = person.png; sourceTree = "<group>"; };
 		44F7CEB41DF9EB3200E22977 /* woman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = woman.png; sourceTree = "<group>"; };
@@ -85,6 +106,16 @@
 				440E789C1DF96D3200B0451B /* Supporting Files */,
 				440E78B31DF994E300B0451B /* RTStudent.h */,
 				440E78B41DF994E300B0451B /* RTStudent.m */,
+				444792151DFF2A8800D3330D /* RTMeetingViewController.h */,
+				444792161DFF2A8800D3330D /* RTMeetingViewController.m */,
+				444792181DFF378E00D3330D /* RTMeetingViewCell.h */,
+				444792191DFF378E00D3330D /* RTMeetingViewCell.m */,
+				441F638B1DFD52DA0069FA2E /* RTMeetingPoint.h */,
+				441F638C1DFD52DA0069FA2E /* RTMeetingPoint.m */,
+				447D9AA01DFC1BA2004538C6 /* RTDescriptionViewController.h */,
+				447D9AA11DFC1BA2004538C6 /* RTDescriptionViewController.m */,
+				447D9A9D1DFC0D87004538C6 /* UIView+MKAnnotationView.h */,
+				447D9A9E1DFC0D87004538C6 /* UIView+MKAnnotationView.m */,
 			);
 			path = "HW37-38";
 			sourceTree = "<group>";
@@ -118,9 +149,12 @@
 		44F7CEB11DF9EB3200E22977 /* imageFiles */ = {
 			isa = PBXGroup;
 			children = (
+				4447921B1DFF390100D3330D /* cancel.png */,
+				4447921C1DFF390100D3330D /* checked.png */,
 				44F7CEB21DF9EB3200E22977 /* man.png */,
 				44F7CEB31DF9EB3200E22977 /* person.png */,
 				44F7CEB41DF9EB3200E22977 /* woman.png */,
+				441F638E1DFD53880069FA2E /* meeting.png */,
 			);
 			name = imageFiles;
 			path = "HW37-38/imageFiles";
@@ -190,8 +224,11 @@
 				440E78AC1DF96D3300B0451B /* LaunchScreen.storyboard in Resources */,
 				440E78A91DF96D3200B0451B /* Assets.xcassets in Resources */,
 				440E78A71DF96D3200B0451B /* Main.storyboard in Resources */,
+				4447921E1DFF390100D3330D /* checked.png in Resources */,
 				44F7CEB71DF9EB3200E22977 /* woman.png in Resources */,
+				4447921D1DFF390100D3330D /* cancel.png in Resources */,
 				44F7CEB61DF9EB3200E22977 /* person.png in Resources */,
+				441F638F1DFD53880069FA2E /* meeting.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +241,11 @@
 			files = (
 				440E78A41DF96D3200B0451B /* ViewController.m in Sources */,
 				440E78A11DF96D3200B0451B /* AppDelegate.m in Sources */,
+				444792171DFF2A8800D3330D /* RTMeetingViewController.m in Sources */,
+				441F638D1DFD52DA0069FA2E /* RTMeetingPoint.m in Sources */,
+				447D9A9F1DFC0D87004538C6 /* UIView+MKAnnotationView.m in Sources */,
+				4447921A1DFF378E00D3330D /* RTMeetingViewCell.m in Sources */,
+				447D9AA21DFC1BA2004538C6 /* RTDescriptionViewController.m in Sources */,
 				440E789E1DF96D3200B0451B /* main.m in Sources */,
 				440E78B51DF994E300B0451B /* RTStudent.m in Sources */,
 			);
