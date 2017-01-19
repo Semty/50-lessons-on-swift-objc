@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16C67" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="RTCar" representedClassName="RTCar" parentEntity="RTObject" syncable="YES">
+        <attribute name="model" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="owner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RTStudent" inverseName="car" inverseEntity="RTStudent" syncable="YES"/>
+    </entity>
+    <entity name="RTCourse" representedClassName="RTCourse" parentEntity="RTObject" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="students" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RTStudent" inverseName="courses" inverseEntity="RTStudent" syncable="YES"/>
+        <relationship name="university" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RTUniversity" inverseName="courses" inverseEntity="RTUniversity" syncable="YES"/>
+        <fetchedProperty name="bestStudents" optional="YES" syncable="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="RTStudent" predicateString="score &gt;= 3.75"/>
+        </fetchedProperty>
+        <fetchedProperty name="studentsWithManyCourses" optional="YES" syncable="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="RTStudent" predicateString="courses.@count &gt; 2"/>
+        </fetchedProperty>
+    </entity>
+    <entity name="RTObject" representedClassName="RTObject" syncable="YES"/>
+    <entity name="RTStudent" representedClassName="RTStudent" parentEntity="RTObject" syncable="YES">
+        <attribute name="dateOfBirth" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="score" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="car" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="RTCar" inverseName="owner" inverseEntity="RTCar" syncable="YES"/>
+        <relationship name="courses" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RTCourse" inverseName="students" inverseEntity="RTCourse" syncable="YES"/>
+        <relationship name="university" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RTUniversity" inverseName="students" inverseEntity="RTUniversity" syncable="YES"/>
+    </entity>
+    <entity name="RTUniversity" representedClassName="RTUniversity" parentEntity="RTObject" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="courses" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="RTCourse" inverseName="university" inverseEntity="RTCourse" syncable="YES"/>
+        <relationship name="students" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="RTStudent" inverseName="university" inverseEntity="RTStudent" syncable="YES"/>
+    </entity>
+    <fetchRequest name="FetchStudents" entity="RTStudent" predicateString="score &gt; 3 AND score &lt;= 3.5 AND firstName CONTAINS &quot;er&quot;"/>
+    <elements>
+        <element name="RTCar" positionX="-1046" positionY="-1591" width="128" height="73"/>
+        <element name="RTCourse" positionX="-1386" positionY="-1591" width="128" height="131"/>
+        <element name="RTObject" positionX="-1314" positionY="-1791" width="128" height="43"/>
+        <element name="RTStudent" positionX="-1217" positionY="-1636" width="128" height="148"/>
+        <element name="RTUniversity" positionX="-1586" positionY="-1576" width="128" height="88"/>
+    </elements>
+</model>
