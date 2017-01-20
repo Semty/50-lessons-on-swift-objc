@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		44E38E3C1E321F6C0011FB35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E38E3B1E321F6C0011FB35 /* AppDelegate.swift */; };
-		44E38E3E1E321F6C0011FB35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E38E3D1E321F6C0011FB35 /* ViewController.swift */; };
 		44E38E411E321F6C0011FB35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44E38E3F1E321F6C0011FB35 /* Main.storyboard */; };
 		44E38E431E321F6C0011FB35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44E38E421E321F6C0011FB35 /* Assets.xcassets */; };
 		44E38E461E321F6C0011FB35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44E38E441E321F6C0011FB35 /* LaunchScreen.storyboard */; };
+		44E38E4E1E3220590011FB35 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E38E4D1E3220590011FB35 /* Student.swift */; };
+		44E38E501E3225780011FB35 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E38E4F1E3225780011FB35 /* DateViewController.swift */; };
+		44E38E521E32287B0011FB35 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E38E511E32287B0011FB35 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		44E38E381E321F6C0011FB35 /* HW40.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW40.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44E38E3B1E321F6C0011FB35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		44E38E3D1E321F6C0011FB35 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		44E38E401E321F6C0011FB35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		44E38E421E321F6C0011FB35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44E38E451E321F6C0011FB35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44E38E471E321F6C0011FB35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44E38E4D1E3220590011FB35 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		44E38E4F1E3225780011FB35 /* DateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
+		44E38E511E32287B0011FB35 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				44E38E3B1E321F6C0011FB35 /* AppDelegate.swift */,
-				44E38E3D1E321F6C0011FB35 /* ViewController.swift */,
+				44E38E511E32287B0011FB35 /* TableViewController.swift */,
+				44E38E4F1E3225780011FB35 /* DateViewController.swift */,
+				44E38E4D1E3220590011FB35 /* Student.swift */,
 				44E38E3F1E321F6C0011FB35 /* Main.storyboard */,
 				44E38E421E321F6C0011FB35 /* Assets.xcassets */,
 				44E38E441E321F6C0011FB35 /* LaunchScreen.storyboard */,
@@ -136,8 +142,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44E38E3E1E321F6C0011FB35 /* ViewController.swift in Sources */,
+				44E38E501E3225780011FB35 /* DateViewController.swift in Sources */,
+				44E38E4E1E3220590011FB35 /* Student.swift in Sources */,
 				44E38E3C1E321F6C0011FB35 /* AppDelegate.swift in Sources */,
+				44E38E521E32287B0011FB35 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +307,7 @@
 				44E38E4C1E321F6C0011FB35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
