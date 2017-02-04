@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16C67" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="RTCourse" representedClassName="RTCourse" parentEntity="RTObject" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" minValueString="1" maxValueString="28" syncable="YES"/>
+        <attribute name="studyBranch" optional="YES" attributeType="String" minValueString="1" maxValueString="20" syncable="YES"/>
+        <attribute name="subject" optional="YES" attributeType="String" minValueString="1" maxValueString="20" syncable="YES"/>
+        <relationship name="students" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RTStudent" inverseName="learningCourses" inverseEntity="RTStudent" syncable="YES"/>
+        <relationship name="teacher" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RTStudent" inverseName="teachingCourses" inverseEntity="RTStudent" syncable="YES"/>
+    </entity>
+    <entity name="RTObject" representedClassName="RTObject" isAbstract="YES" syncable="YES"/>
+    <entity name="RTStudent" representedClassName="RTStudent" parentEntity="RTObject" syncable="YES">
+        <attribute name="email" optional="YES" attributeType="String" minValueString="1" maxValueString="30" defaultValueString="Default E-Mail" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" minValueString="1" maxValueString="20" defaultValueString="Default First Name" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" minValueString="1" maxValueString="20" defaultValueString="Default Last Name" syncable="YES"/>
+        <relationship name="learningCourses" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RTCourse" inverseName="students" inverseEntity="RTCourse" syncable="YES"/>
+        <relationship name="teachingCourses" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="RTCourse" inverseName="teacher" inverseEntity="RTCourse" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="RTCourse" positionX="61" positionY="-18" width="128" height="118"/>
+        <element name="RTObject" positionX="-54" positionY="-126" width="128" height="43"/>
+        <element name="RTStudent" positionX="-180" positionY="-18" width="128" height="118"/>
+    </elements>
+</model>
