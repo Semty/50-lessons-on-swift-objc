@@ -15,6 +15,7 @@
 @interface RTTableViewController ()
 
 @property (strong, nonatomic) NSMutableArray *friendsArray;
+@property (assign, nonatomic) BOOL firstTimeAppear;
 
 @end
 
@@ -33,12 +34,28 @@ static NSInteger friendsInRequest = 5;
     
     self.friendsArray = [[NSMutableArray alloc] init];
     
-    [self getFriendsFromServer];
+    self.firstTimeAppear = YES;
+    
+    //[self getFriendsFromServer];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void) viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    if (self.firstTimeAppear) {
+        
+        [[RTServerManager sharedManager] authorizeUser:^(RTUser *user) {
+            NSLog(@"AUTHORIZED\n");
+            NSLog(@"%@ %@\n\n", user.firstName, user.lastName);
+        }];
+        
+        self.firstTimeAppear = NO;
+    }
 }
 
 #pragma mark - VK API

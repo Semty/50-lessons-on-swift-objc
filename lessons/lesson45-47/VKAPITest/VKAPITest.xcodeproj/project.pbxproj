@@ -16,6 +16,8 @@
 		446D24051E4F2C7E00FFA16B /* RTTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 446D24041E4F2C7E00FFA16B /* RTTableViewController.m */; };
 		44743F181E4F31F20067F022 /* RTServerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 44743F171E4F31F20067F022 /* RTServerManager.m */; };
 		44743F1B1E4F739C0067F022 /* RTUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 44743F1A1E4F739C0067F022 /* RTUser.m */; };
+		4481DA541E5074480052A29B /* RTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4481DA531E5074480052A29B /* RTLoginViewController.m */; };
+		4481DA571E50750C0052A29B /* RTAccessToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 4481DA561E50750C0052A29B /* RTAccessToken.m */; };
 		841B8FE24C8730DE751EF919 /* libPods-VKAPITest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6680F92BEB7B50C406959927 /* libPods-VKAPITest.a */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +37,10 @@
 		44743F171E4F31F20067F022 /* RTServerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTServerManager.m; sourceTree = "<group>"; };
 		44743F191E4F739C0067F022 /* RTUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTUser.h; sourceTree = "<group>"; };
 		44743F1A1E4F739C0067F022 /* RTUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTUser.m; sourceTree = "<group>"; };
+		4481DA521E5074480052A29B /* RTLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTLoginViewController.h; sourceTree = "<group>"; };
+		4481DA531E5074480052A29B /* RTLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTLoginViewController.m; sourceTree = "<group>"; };
+		4481DA551E50750C0052A29B /* RTAccessToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTAccessToken.h; sourceTree = "<group>"; };
+		4481DA561E50750C0052A29B /* RTAccessToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTAccessToken.m; sourceTree = "<group>"; };
 		5DEBE5E0D485584B56F35368 /* Pods-VKAPITest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKAPITest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VKAPITest/Pods-VKAPITest.debug.xcconfig"; sourceTree = "<group>"; };
 		6680F92BEB7B50C406959927 /* libPods-VKAPITest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VKAPITest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B30FEE9BA201ECECDA864CB9 /* Pods-VKAPITest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKAPITest.release.xcconfig"; path = "Pods/Target Support Files/Pods-VKAPITest/Pods-VKAPITest.release.xcconfig"; sourceTree = "<group>"; };
@@ -81,6 +87,10 @@
 				44743F171E4F31F20067F022 /* RTServerManager.m */,
 				44743F191E4F739C0067F022 /* RTUser.h */,
 				44743F1A1E4F739C0067F022 /* RTUser.m */,
+				4481DA521E5074480052A29B /* RTLoginViewController.h */,
+				4481DA531E5074480052A29B /* RTLoginViewController.m */,
+				4481DA551E50750C0052A29B /* RTAccessToken.h */,
+				4481DA561E50750C0052A29B /* RTAccessToken.m */,
 				446D23F21E4F2C1300FFA16B /* Main.storyboard */,
 				446D23F81E4F2C1300FFA16B /* Assets.xcassets */,
 				446D23FA1E4F2C1300FFA16B /* LaunchScreen.storyboard */,
@@ -240,7 +250,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				44743F181E4F31F20067F022 /* RTServerManager.m in Sources */,
+				4481DA541E5074480052A29B /* RTLoginViewController.m in Sources */,
 				446D23F71E4F2C1300FFA16B /* VKAPITest.xcdatamodeld in Sources */,
+				4481DA571E50750C0052A29B /* RTAccessToken.m in Sources */,
 				446D23EE1E4F2C1300FFA16B /* AppDelegate.m in Sources */,
 				446D23EB1E4F2C1300FFA16B /* main.m in Sources */,
 				44743F1B1E4F739C0067F022 /* RTUser.m in Sources */,
