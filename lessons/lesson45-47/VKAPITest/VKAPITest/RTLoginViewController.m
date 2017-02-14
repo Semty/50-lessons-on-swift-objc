@@ -50,7 +50,7 @@
     
     NSString *urlString = @"https://oauth.vk.com/authorize?"
                           "client_id=5871524&"
-                          "redirect_uri=hello.there&"
+                          "redirect_uri=https://oauth.vk.com/blank.html&"
                           "display=mobile&"
                           "scope=139286&"
                           "response_type=token&"
@@ -102,9 +102,9 @@
 - (BOOL)webView:(UIWebView *)webView    shouldStartLoadWithRequest:(NSURLRequest *)request
                                                     navigationType:(UIWebViewNavigationType)navigationType {
     
-    // http://hello.there/#access_token=fd104dc2598e9f8ee806c0ce92930c2e4873635854248fd120378b907612acb7c7928ecaecd2c849d294a&expires_in=86400&user_id=177780397
+    // https://oauth.vk.com/blank.html/#access_token=fd104dc2598e9f8ee806c0ce92930c2e4873635854248fd120378b907612acb7c7928ecaecd2c849d294a&expires_in=86400&user_id=177780397
     
-    if ([[[request URL] host] isEqualToString:@"hello.there"]) {
+    if ([[[request URL] description] rangeOfString:@"#access_token="].location != NSNotFound) {
         
         RTAccessToken *token = [[RTAccessToken alloc] init];
         

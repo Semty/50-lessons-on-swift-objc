@@ -27,4 +27,25 @@
                     onSuccess:(void(^)(NSArray *friends))success
                     onFailure:(void(^)(NSError *error, NSInteger statusCode))failure;
 
+- (void) getGroupWall:(NSString *)groupDomain
+           withOffset:(NSInteger)offset
+                count:(NSInteger)count
+            onSuccess:(void(^)(NSArray *posts))success
+            onFailure:(void(^)(NSError *error, NSInteger statusCode))failure;
+
+- (void) postText:(NSString *)text
+      onGroupWall:(NSString *)groupID
+        onSuccess:(void(^)(NSDictionary *result))success
+        onFailure:(void(^)(NSError *error, NSInteger statusCode))failure;
+
 @end
+
+
+
+
+
+
+
+
+
+

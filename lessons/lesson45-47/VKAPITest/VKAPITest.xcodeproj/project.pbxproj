@@ -18,6 +18,10 @@
 		44743F1B1E4F739C0067F022 /* RTUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 44743F1A1E4F739C0067F022 /* RTUser.m */; };
 		4481DA541E5074480052A29B /* RTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4481DA531E5074480052A29B /* RTLoginViewController.m */; };
 		4481DA571E50750C0052A29B /* RTAccessToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 4481DA561E50750C0052A29B /* RTAccessToken.m */; };
+		449AA7FD1E5310D6000AD916 /* RTPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 449AA7FC1E5310D6000AD916 /* RTPost.m */; };
+		449AA8011E531F62000AD916 /* RTServerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 449AA8001E531F62000AD916 /* RTServerObject.m */; };
+		449AA8041E53257E000AD916 /* RTGroupWallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 449AA8031E53257E000AD916 /* RTGroupWallViewController.m */; };
+		449AA8071E532A18000AD916 /* RTPostCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 449AA8061E532A18000AD916 /* RTPostCell.m */; };
 		841B8FE24C8730DE751EF919 /* libPods-VKAPITest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6680F92BEB7B50C406959927 /* libPods-VKAPITest.a */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +45,14 @@
 		4481DA531E5074480052A29B /* RTLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTLoginViewController.m; sourceTree = "<group>"; };
 		4481DA551E50750C0052A29B /* RTAccessToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTAccessToken.h; sourceTree = "<group>"; };
 		4481DA561E50750C0052A29B /* RTAccessToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTAccessToken.m; sourceTree = "<group>"; };
+		449AA7FB1E5310D6000AD916 /* RTPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTPost.h; sourceTree = "<group>"; };
+		449AA7FC1E5310D6000AD916 /* RTPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTPost.m; sourceTree = "<group>"; };
+		449AA7FF1E531F62000AD916 /* RTServerObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTServerObject.h; sourceTree = "<group>"; };
+		449AA8001E531F62000AD916 /* RTServerObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTServerObject.m; sourceTree = "<group>"; };
+		449AA8021E53257E000AD916 /* RTGroupWallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTGroupWallViewController.h; sourceTree = "<group>"; };
+		449AA8031E53257E000AD916 /* RTGroupWallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTGroupWallViewController.m; sourceTree = "<group>"; };
+		449AA8051E532A18000AD916 /* RTPostCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTPostCell.h; sourceTree = "<group>"; };
+		449AA8061E532A18000AD916 /* RTPostCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTPostCell.m; sourceTree = "<group>"; };
 		5DEBE5E0D485584B56F35368 /* Pods-VKAPITest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKAPITest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VKAPITest/Pods-VKAPITest.debug.xcconfig"; sourceTree = "<group>"; };
 		6680F92BEB7B50C406959927 /* libPods-VKAPITest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VKAPITest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B30FEE9BA201ECECDA864CB9 /* Pods-VKAPITest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKAPITest.release.xcconfig"; path = "Pods/Target Support Files/Pods-VKAPITest/Pods-VKAPITest.release.xcconfig"; sourceTree = "<group>"; };
@@ -81,12 +93,14 @@
 			children = (
 				446D23EC1E4F2C1300FFA16B /* AppDelegate.h */,
 				446D23ED1E4F2C1300FFA16B /* AppDelegate.m */,
+				449AA8021E53257E000AD916 /* RTGroupWallViewController.h */,
+				449AA8031E53257E000AD916 /* RTGroupWallViewController.m */,
 				446D24031E4F2C7E00FFA16B /* RTTableViewController.h */,
 				446D24041E4F2C7E00FFA16B /* RTTableViewController.m */,
 				44743F161E4F31F20067F022 /* RTServerManager.h */,
 				44743F171E4F31F20067F022 /* RTServerManager.m */,
-				44743F191E4F739C0067F022 /* RTUser.h */,
-				44743F1A1E4F739C0067F022 /* RTUser.m */,
+				449AA8081E532A1E000AD916 /* Cells */,
+				449AA7FE1E531F25000AD916 /* Models */,
 				4481DA521E5074480052A29B /* RTLoginViewController.h */,
 				4481DA531E5074480052A29B /* RTLoginViewController.m */,
 				4481DA551E50750C0052A29B /* RTAccessToken.h */,
@@ -107,6 +121,28 @@
 				446D23EA1E4F2C1300FFA16B /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		449AA7FE1E531F25000AD916 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				449AA7FF1E531F62000AD916 /* RTServerObject.h */,
+				449AA8001E531F62000AD916 /* RTServerObject.m */,
+				44743F191E4F739C0067F022 /* RTUser.h */,
+				44743F1A1E4F739C0067F022 /* RTUser.m */,
+				449AA7FB1E5310D6000AD916 /* RTPost.h */,
+				449AA7FC1E5310D6000AD916 /* RTPost.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		449AA8081E532A1E000AD916 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				449AA8051E532A18000AD916 /* RTPostCell.h */,
+				449AA8061E532A18000AD916 /* RTPostCell.m */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 		4FD980AA97EEE91B3B6993E7 /* Pods */ = {
@@ -254,8 +290,12 @@
 				446D23F71E4F2C1300FFA16B /* VKAPITest.xcdatamodeld in Sources */,
 				4481DA571E50750C0052A29B /* RTAccessToken.m in Sources */,
 				446D23EE1E4F2C1300FFA16B /* AppDelegate.m in Sources */,
+				449AA8041E53257E000AD916 /* RTGroupWallViewController.m in Sources */,
+				449AA8011E531F62000AD916 /* RTServerObject.m in Sources */,
+				449AA8071E532A18000AD916 /* RTPostCell.m in Sources */,
 				446D23EB1E4F2C1300FFA16B /* main.m in Sources */,
 				44743F1B1E4F739C0067F022 /* RTUser.m in Sources */,
+				449AA7FD1E5310D6000AD916 /* RTPost.m in Sources */,
 				446D24051E4F2C7E00FFA16B /* RTTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

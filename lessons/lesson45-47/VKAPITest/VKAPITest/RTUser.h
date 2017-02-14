@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "RTServerObject.h"
 
-@interface RTUser : NSObject
+@interface RTUser : RTServerObject
 
 @property (strong, nonatomic) NSString *firstName;
 @property (strong, nonatomic) NSString *lastName;

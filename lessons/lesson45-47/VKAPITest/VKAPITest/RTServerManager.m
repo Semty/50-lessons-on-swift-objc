@@ -9,6 +9,7 @@
 #import "RTServerManager.h"
 #import <AFNetworking.h>
 #import "RTUser.h"
+#import "RTPost.h"
 #import "RTLoginViewController.h"
 #import "RTAccessToken.h"
 
@@ -87,12 +88,13 @@
        onSuccess:(void(^)(RTUser *user))success
        onFailure:(void(^)(NSError *error, NSInteger statusCode))failure {
     
-    NSDictionary *parameters = @{ @"user_ids"   : userID,
-                                  @"fields"     : @"photo_100",
-                                  @"name_case"  : @"nom",
-                                  @"lang"       : @"ru",
-                                  @"https"      : @1,
-                                  @"v"          : @5.62 };
+    NSDictionary *parameters = @{ @"user_ids"       : userID,
+                                  @"fields"         : @"photo_100",
+                                  @"name_case"      : @"nom",
+                                  @"lang"           : @"ru",
+                                  @"https"          : @1,
+                                  @"access_token"   : self.accessToken.accessToken,
+                                  @"v"              : @5.62 };
     
     NSURLRequest *request = [[AFHTTPRequestSerializer serializer] requestWithMethod:@"GET"
                                                                           URLString:@"https://api.vk.com/method/users.get"
@@ -134,15 +136,16 @@
                     onSuccess:(void(^)(NSArray *friends))success
                     onFailure:(void(^)(NSError *error, NSInteger statusCode))failure {
     
-    NSDictionary *parameters = @{ @"user_id"    : @177780397,
-                                  @"order"      : @"name",
-                                  @"count"      : @(count),
-                                  @"offset"     : @(offset),
-                                  @"fields"     : @"photo_100",
-                                  @"name_case"  : @"nom",
-                                  @"lang"       : @"ru",
-                                  @"https"      : @1,
-                                  @"v"          : @5.62 };
+    NSDictionary *parameters = @{ @"user_id"        : self.accessToken.userID,
+                                  @"order"          : @"name",
+                                  @"count"          : @(count),
+                                  @"offset"         : @(offset),
+                                  @"fields"         : @"photo_100",
+                                  @"name_case"      : @"nom",
+                                  @"lang"           : @"ru",
+                                  @"https"          : @1,
+                                  @"access_token"   : self.accessToken.accessToken,
+                                  @"v"              : @5.62 };
     
     NSURLRequest *request = [[AFHTTPRequestSerializer serializer] requestWithMethod:@"GET"
                                                                           URLString:@"https://api.vk.com/method/friends.get"
@@ -180,6 +183,103 @@
     }];
     
     [dataTask resume];
+}
+
+- (void) getGroupWall:(NSString *)groupDomain
+           withOffset:(NSInteger)offset
+                count:(NSInteger)count
+            onSuccess:(void(^)(NSArray *posts))success
+            onFailure:(void(^)(NSError *error, NSInteger statusCode))failure {
+    
+    NSDictionary *parameters = @{ @"domain"         : groupDomain,
+                                  @"count"          : @(count),
+                                  @"offset"         : @(offset),
+                                  @"filter"         : @"all",
+                                  @"extended"       : @1,
+                                  @"fields"         : @"photo_100",
+                                  @"lang"           : @"ru",
+                                  @"https"          : @1,
+                                  @"access_token"   : self.accessToken.accessToken,
+                                  @"v"              : @5.62 };
+    
+    NSURLRequest *request = [[AFHTTPRequestSerializer serializer] requestWithMethod:@"GET"
+                                                                          URLString:@"https://api.vk.com/method/wall.get"
+                                                                         parameters:parameters
+                                                                              error:nil];
+    
+    NSURLSessionDataTask *dataTask = [self.manager dataTaskWithRequest:request
+                                                     completionHandler:^(NSURLResponse *response,
+                                                                         NSDictionary *responseObject,
+                                                                         NSError *error) {
+                                                         if (error) {
+                                                             NSLog(@"Error: %@", error);
+                                                             
+                                                             NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
+                                                             
+                                                             if (failure) {
+                                                                 failure(error, httpResponse.statusCode);
+                                                             }
+                                                             
+                                                         } else {
+                                                             NSLog(@"%@ %@", response, responseObject);
+                                                             
+                                                             NSArray *itemsArray = [[responseObject objectForKey:@"response"] objectForKey:@"items"];
+                                                             NSMutableArray *postsArray = [[NSMutableArray alloc] init];
+                                                             
+                                                             for (NSDictionary *item in itemsArray) {
+                                                                 RTPost *post = [[RTPost alloc] initWithServerResponse:item];
+                                                                 [postsArray addObject:post];
+                                                             }
+                                                             
+                                                             if (success) {
+                                                                 success(postsArray);
+                                                             }
+                                                         }
+                                                     }];
+    
+    [dataTask resume];
+}
+
+- (void) postText:(NSString *)text
+      onGroupWall:(NSString *)groupID
+        onSuccess:(void(^)(NSDictionary *result))success
+        onFailure:(void(^)(NSError *error, NSInteger statusCode))failure{
+    
+    NSDictionary *parameters = @{ @"owner_id"       : groupID,
+                                  @"message"        : text,
+                                  @"https"          : @1,
+                                  @"access_token"   : self.accessToken.accessToken,
+                                  @"v"              : @5.62 };
+    
+    NSURLRequest *request = [[AFHTTPRequestSerializer serializer] requestWithMethod:@"POST"
+                                                                          URLString:@"https://api.vk.com/method/wall.post"
+                                                                         parameters:parameters
+                                                                              error:nil];
+    
+    NSURLSessionDataTask *dataTask = [self.manager dataTaskWithRequest:request
+                                                     completionHandler:^(NSURLResponse *response,
+                                                                         NSDictionary *responseObject,
+                                                                         NSError *error) {
+                                                         if (error) {
+                                                             NSLog(@"Error: %@", error);
+                                                             
+                                                             NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
+                                                             
+                                                             if (failure) {
+                                                                 failure(error, httpResponse.statusCode);
+                                                             }
+                                                             
+                                                         } else {
+                                                             NSLog(@"%@ %@", response, responseObject);
+                                                             
+                                                             if (success) {
+                                                                 success(responseObject);
+                                                             }
+                                                         }
+                                                     }];
+    
+    [dataTask resume];
+    
 }
 
 @end
